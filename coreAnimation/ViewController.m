@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ReflectionView.h"
+#import "CAEmitterLayerView.h"
 
 @interface ViewController ()
 
@@ -78,11 +79,12 @@
     
     //CAReplicatorLayer的动画
     
-    ReflectionView *view = [[ReflectionView alloc]initWithFrame:self.view.bounds];
+//    ReflectionView *view = [[ReflectionView alloc]initWithFrame:self.view.bounds];
+//    [self.view addSubview:view];
+    
+    CAEmitterLayerView * view = [[CAEmitterLayerView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:view];
     
-    
-
 }
 
 
